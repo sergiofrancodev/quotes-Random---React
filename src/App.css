@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+body{
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  
+}
+.cardQuotes{
+    background-color: white;
+    width: 35rem;
+    border: 1px solid black;
+    color: red;
+    box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.562);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+blockquote{
+    quotes: '\00AB' '\00BB' '\201E' '\201C';
+    display: flex;
+    gap: 1rem;
+
+}
+blockquote > p {
+    margin-top: 5%;
+}
+.author{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 5%;
+    margin-top: -5%;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: inherit;
+   
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-random{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin: 5%;
+margin-top: 0;
 }
